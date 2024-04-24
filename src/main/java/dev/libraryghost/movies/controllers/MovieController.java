@@ -1,4 +1,4 @@
-package dev.libraryghost.movies;
+package dev.libraryghost.movies.controllers;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import dev.libraryghost.movies.models.Movie;
+import dev.libraryghost.movies.services.MovieService;
+
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/api/v1/movies")
 public class MovieController {
     @Autowired

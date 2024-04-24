@@ -1,4 +1,4 @@
-package dev.libraryghost.movies;
+package dev.libraryghost.movies.models;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

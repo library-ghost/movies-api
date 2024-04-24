@@ -1,4 +1,4 @@
-package dev.libraryghost.movies;
+package dev.libraryghost.movies.models;
 
 import java.util.List;
 

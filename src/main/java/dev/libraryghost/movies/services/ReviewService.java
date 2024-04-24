@@ -1,10 +1,14 @@
-package dev.libraryghost.movies;
+package dev.libraryghost.movies.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+
+import dev.libraryghost.movies.models.Review;
+import dev.libraryghost.movies.repository.ReviewRepository;
+import dev.libraryghost.movies.models.Movie;
 
 @Service
 public class ReviewService {

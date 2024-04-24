@@ -1,4 +1,4 @@
-package dev.libraryghost.movies;
+package dev.libraryghost.movies.controllers;
 
 import java.util.Map;
 
@@ -11,9 +11,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import dev.libraryghost.movies.models.Review;
+import dev.libraryghost.movies.services.ReviewService;
+
 @RestController
 @RequestMapping("/api/v1/reviews")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class ReviewController {
     @Autowired
     private ReviewService reviewService;
